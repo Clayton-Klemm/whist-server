@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Create Lobby</title>
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+    <style>
+        /* .buttons-container {
+            text-align: center;
+        } */
+        .buttons-container form,
+        .buttons-container button {
+            display: inline-block;
+            /* margin-right: 10px; */
+        }
+    </style>
+    <script>
+        function togglePasswordTextBox() {
+            var checkBox = document.getElementById("lobbyPasswordRadioButton");
+            var textBox = document.getElementById("lobbyPasswordTxtBox");
+            textBox.disabled = !checkBox.checked;
+        }
+        // Call the function on page load to set the initial state
+        window.onload = function() {
+            togglePasswordTextBox();
+        }
+    </script>
+</head>
+<body>
+    <div th:if="${name != null}" style="position: absolute; top: 0; right: 0;">
+        <p>Welcome, <span th:text="${name}">Name</span>!</p>
+    </div>
+    <h1 class="centered-title">Create a New Lobby</h1>
+    <div class="buttons-container">
+        <form th:action="@{/createLobby}" method="post">
+            <label for="lobbyName">Lobby Name:</label>
+            <input type="text" id="lobbyName" name="lobbyName"><br>
+            <label for="lobbyPassword">Require Password?</label>
+            <input type="checkbox" id="lobbyPasswordRadioButton" name="lobbyPasswordRadioButton" onclick="togglePasswordTextBox()">
+            <input type="text" id="lobbyPasswordTxtBox" name="lobbyPasswordTxtBox"><br>
+            <input type="submit" value="Create Lobby">
+        </form>
+        <button onclick="window.location.href='/lobby'">Back to Lobby</button>
+    </div>
+
+</body>
+</html>

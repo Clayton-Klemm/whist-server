@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Index Page</title>
+</head>
+<body>
+    <div th:if="${name != null}">
+        <p>Welcome, <span th:text="${name}">Name</span>!</p>
+        <button onclick="window.location.href='/lobby'">Enter Lobby</button>
+    </div>
+    <div th:if="${name == null}">
+        <form action="/submitName" method="post">
+            <input type="text" name="name" placeholder="Enter your name">
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Minnesota Whist</title>
+    <!-- Link to CSS file -->
+    <link rel="stylesheet" type="text/css" th:href="@{/css/style.css}" />
+</head>
+<body>
+    <div th:if="${name != null}" style="position: absolute; top: 0; right: 0;">
+        <p>Welcome, <span th:text="${name}"></span>!</p>
+    </div>
+    <h1 class="centered-title">Welcome to Minnesota Whist!</h1>
+
+    <div class="create-lobby-button-container">
+        <!-- Create Lobby Button -->
+        <a href="/showCreateLobby" class="create-lobby-button">Create Lobby</a>
+    </div>
+
+    <!-- List of active lobbies -->
+    <div>
+        <h2 class="centered-title">Active Lobbies:</h2>
+        <table class="lobby-table">
+            <tr>
+                <th>Lobby Name</th>
+                <th class="player-count">Players</th>
+            </tr>
+            <!-- Loop through active lobbies -->
+            <tr th:each="lobby : ${lobbies}">
+                <td th:text="${lobby.name}">Lobby Name</td>
+                <td class="player-count" th:text="${#lists.size(lobby.players)}">Player Count</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

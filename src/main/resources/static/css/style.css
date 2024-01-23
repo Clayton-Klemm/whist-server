@@ -1,0 +1,58 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.centered-title {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.lobby-table {
+    width: 60%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+.lobby-table th, .lobby-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.lobby-table th {
+    background-color: #f2f2f2;
+}
+
+.create-lobby-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.create-lobby-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 16px;
+    color: #fff;
+    background-color: #007BFF;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.create-lobby-button:hover {
+    background-color: #0056b3;
+}
+
+.player-count {
+    width: 50px; /* Adjust width as necessary */
+    text-align: center;
+}
+
+/* .lobby-body {
+    background-color: #fdfdfd;
+    primary-text-color: #333333;
+    secondary-text-color: #666666;
+    accent-color: #d35400;
+} */
