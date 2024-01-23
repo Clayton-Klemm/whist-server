@@ -1,7 +1,7 @@
 # Project Name: whist-server
 
 ## Introduction
-This project is inspired by Joel Niklaus's work on "JassTheRipper" as well as the paper on "AlphaHoldem" by Enmin Zhao, Renye Yan, Jinqiu Li, Kai Li, and Junliang Xing. My aim is to develop a Spring Boot server dedicated to researching AI strategies in card games, with a particular focus on the game of Minnesota Whist.
+This project is inspired by Joel Niklaus's work on "JassTheRipper" and the paper "AlphaHoldem" by Enmin Zhao, Renye Yan, Jinqiu Li, Kai Li, and Junliang Xing. My aim is to develop a Spring Boot server dedicated to researching AI strategies in card games, focusing particularly on the game of Minnesota Whist.
 
 ## Roadmap
 
@@ -12,13 +12,13 @@ This project is inspired by Joel Niklaus's work on "JassTheRipper" as well as th
 
 ### Phase 2: Crafting Game Logic
 - [ ] Develop the game logic.
-- [ ] Make the game playable by human players first
+- [ ] Make the game playable by human players first.
 - [ ] Test and debug the game logic.
 
 ### Phase 3: AI Development and Experimentation
-- [ ] Develop baseline AI that inherits player.java class abilities and plays cards at random.
-- [ ] Develop a rule-based AI that plays cards based upon hardcoded rule set.
-- [ ] Develop a trained AI that uses Monty carlo tree search machine learing strategy.
+- [ ] Develop a baseline AI that inherits abilities from the player.java class and plays cards randomly.
+- [ ] Develop a rule-based AI that plays cards based on a hardcoded rule set.
+- [ ] Develop a trained AI using the Monte Carlo tree search machine learning strategy.
 - [ ] Conduct extensive AI performance testing and optimization.
 
 ### Phase 4: Documentation and Enhancement
@@ -32,13 +32,13 @@ This project is inspired by Joel Niklaus's work on "JassTheRipper" as well as th
 - [ ] Prepare and share research findings through publications or presentations.
 
 ## Contributing
-I am very new to Java Spring Boot and game development in general if you have any constructive criticisms I would be **very** greatful! 
+As I am very new to Java Spring Boot and game development, any constructive criticism would be greatly appreciated!
 
 ## License
 This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Inspiration and Reference Materials
-- **Joel Niklaus** for the inspiration provided by the "JassTheRipper" paper. https://niklaus.ai/files/theses/Master_Thesis.pdf
-- AlphaHoldem: High-Performance Artificial Intelligence for Heads-Up No-Limit Poker via End-to-End Reinforcement Learning by Enmin Zhao, Renye Yan, Jinqiu Li, Kai Li, and Junliang Xing. https://ojs.aaai.org/index.php/AAAI/article/view/20394
-- challenge-client-java by **webplatformz** [https://github.com/webplatformz/challenge ](https://github.com/webplatformz/challenge-client-java)
-- **Carlos Espejo** https://github.com/cespejo1/Spades-Game 
+- "JassTheRipper" by Joel Niklaus. [Master Thesis](https://niklaus.ai/files/theses/Master_Thesis.pdf)
+- "AlphaHoldem: High-Performance Artificial Intelligence for Heads-Up No-Limit Poker via End-to-End Reinforcement Learning" by Enmin Zhao, Renye Yan, Jinqiu Li, Kai Li, and Junliang Xing. [AAAI Article](https://ojs.aaai.org/index.php/AAAI/article/view/20394)
+- challenge-client-java by **webplatformz**. [GitHub Repository](https://github.com/webplatformz/challenge-client-java)
+- **Carlos Espejo**'s Spades Game. [GitHub Repository](https://github.com/cespejo1/Spades-Game)
